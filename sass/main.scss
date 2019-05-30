@@ -1,0 +1,24 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@font-face {
+	font-family: "GT Eesti";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/gt-eesti-text/GT-Eesti-Text-Regular.eot");
+	src: url("../fonts/gt-eesti-text/GT-Eesti-Text-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gt-eesti-text/GT-Eesti-Text-Regular.woff2") format("woff2"), url("../fonts/gt-eesti-text/GT-Eesti-Text-Regular.woff") format("woff"), url("/assets/fonts/gt-eesti-text/GT-Eesti-Text-Regular.otf") format("opentype"), url("../fonts/gt-eesti-text/GT-Eesti-Text-Regular.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "GT Eesti Display";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium.eot");
+	src: url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium?#iefix") format("embedded-opentype"), url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium.woff2") format("woff2"), url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium.woff") format("woff"), url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium.otf") format("opentype"), url("../fonts/gt-eesti-text/GT-Eesti-Pro-Display-Medium.ttf") format("truetype")
+}
+  
+
+body {
+    font-family: "GT Eesti Display",Helvetica,Arial,sans-serif;
+}
