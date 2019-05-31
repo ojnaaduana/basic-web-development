@@ -22,3 +22,158 @@
 body {
     font-family: "GT Eesti Display",Helvetica,Arial,sans-serif;
 }
+h1{
+    font-family: "GT Eesti Display",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 4.375rem;
+    line-height: 73px;
+    letter-spacing: 0;
+    color: #222c2d;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+
+// -------------------------------------------------------------
+// hero styles 
+.hero .text {
+    color: #0f5450;
+    margin-top: 52px;
+}
+.hero .text p {
+    font-size: 1.75rem;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+    font-family: "GT Eesti",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero .btn-outline-dark{
+    border-radius:0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+// end hero styles 
+// -------------------------------------------------------------
+
+
+
+
+// -------------------------------------------------------------
+// services styles
+.services {
+    background: #F2F4F4 url('https://iona.studio/assets/images/services-bg.png'); // grab img from https://iona.studio/
+    position: relative;
+}
+
+.services .container{
+    padding-top: 62px;
+    padding-bottom: 15px;
+}
+
+.services .section-title{
+    color: #0f5450;
+    font-size: 2.9375rem;
+    line-height: 55px;
+    letter-spacing: 0.5px;
+    margin-top: 1px;
+    margin-bottom: 48px;
+}
+
+.services .services-img{
+    height: 130px;
+    width: 130px;
+}
+
+.services .pos-left{
+    margin-top: 64px;
+}
+
+.services .mb-row{
+    margin-bottom: 57px;
+}
+
+.services .card{
+    border-radius: 0;
+    border: none;
+}
+
+.services .card-header {
+    border-bottom:0px;
+    padding: 24px 24px 0 32px;
+}
+
+.services .card-header h4{
+    font-size: 1.8125rem;
+    line-height: 40px;
+    letter-spacing: 0.4px
+}
+
+.services .card-body {
+    padding: 10px 30px 10px 32px;
+    margin-bottom: initial;
+    font-size: 1.125rem;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.services .card-body .card-text{
+    font-family: "GT Eesti",Helvetica,Arial,sans-serif;
+}
+
+.services .card-footer{
+    border-top:0px;
+    padding: 10px 16px 20px 32px;
+}
+
+
+.services .card-footer ul{
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services .card-footer ul li {
+    display: inline;
+    color: #0f5450;
+    
+}
+.services .card-footer ul li span{
+    font-size: .75rem;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "GT Eesti",Helvetica,Arial,sans-serif;
+}
+
+.services .card-footer ul li:not(:last-child):after {
+    content: '\00b7';
+    margin: 0 4px 0 9px;
+    color: #ee9c73;
+    font-weight: bold;
+    vertical-align: middle;
+}
+// end services styles
+// -------------------------------------------------------------
+
+
+
+
+// -------------------------------------------------------------
+// bootstrap responsive breakpoints  
+@include media-breakpoint-down(xs) { // Extra small devices (portrait phones, less than 576px)
+}
+@include media-breakpoint-down(sm) {  // Small devices (landscape phones, 576px and up)
+}
+@include media-breakpoint-down(md) {  // Medium devices (tablets, 768px and up)
+}
+@include media-breakpoint-down(lg) { // Large devices (desktops, 992px and up)
+}
+@include media-breakpoint-only(xl) {  // Extra large devices (large desktops, 1200px and up)
+}
+
+// end bootstrap responsive breakpoints  
+// -------------------------------------------------------------
