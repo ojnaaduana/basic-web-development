@@ -162,10 +162,77 @@ h1{
 
 
 // -------------------------------------------------------------
-// bootstrap responsive breakpoints  
+// bootstrap responsive breakpoints  defaults
 @include media-breakpoint-down(xs) { // Extra small devices (portrait phones, less than 576px)
+    
 }
 @include media-breakpoint-down(sm) {  // Small devices (landscape phones, 576px and up)
+
+    .hero{
+        .container{
+            margin-bottom: 25px !important;
+            padding-left:24px;
+            padding-right: 24px;
+        }
+        .hero-title{
+            font-size: 42px;
+            line-height: 50px;
+        }
+        .text{
+            margin: 40px 0 0 0 !important;
+        }
+        .text p {
+            font-size: 21px;
+            line-height: 30px;
+        }
+        .link {
+            margin: 35px 0 0 0  !important;
+        }
+    }
+
+    .services {
+        .container{
+            padding-top:53px;
+        }
+        .section-title{
+            font-size: 1.8rem;
+            left:10px;
+        }
+        .card-header h4{
+            font-size: 1.4375rem;
+        }
+        .card-body .card-text {
+            font-size:1rem;
+        }
+        .pos-right {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-right: 24px !important;
+            margin-bottom: 45px !important;
+        }
+        .pos-right .card-header{
+            padding-left: 40px;
+        }
+        .pos-right .card-body{
+            padding-left: 40px;
+        }
+        .pos-right .card-footer{
+            padding-left: 40px;
+        }
+        .pos-left {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 24px !important;
+            margin-bottom: 45px !important;
+        }
+        .pos-left .card-body{
+            padding-right: 40px;
+        }
+        .pos-left .card-footer{
+            padding-right: 40px;
+        }
+    }
+
 }
 @include media-breakpoint-down(md) {  // Medium devices (tablets, 768px and up)
     
