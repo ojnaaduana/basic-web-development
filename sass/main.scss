@@ -30,9 +30,7 @@ h1{
     letter-spacing: 0;
     color: #222c2d;
 }
-.flex-end {
-    justify-content: flex-end;
-}
+
 
 // -------------------------------------------------------------
 // hero styles 
@@ -162,6 +160,7 @@ h1{
 
 
 
+
 // -------------------------------------------------------------
 // bootstrap responsive breakpoints  
 @include media-breakpoint-down(xs) { // Extra small devices (portrait phones, less than 576px)
@@ -169,6 +168,53 @@ h1{
 @include media-breakpoint-down(sm) {  // Small devices (landscape phones, 576px and up)
 }
 @include media-breakpoint-down(md) {  // Medium devices (tablets, 768px and up)
+    
+    .container {
+        max-width: 690px;
+    }
+
+    .hero {
+        .text { 
+            margin-top: 15px;
+            margin-left: 125px;
+        }
+        .link {
+            margin-left: 125px;
+        }
+    }
+
+    .services {
+        .section-title{
+            position: absolute;
+        }
+        .mb-row{
+            margin-bottom: 0px !important;
+        }
+        .pos-left{
+            margin-top:0px;
+            padding-left: 15px;
+            padding-right: 215px;
+        }
+        .pos-right{
+            padding-left: 215px;
+            padding-right: 15px;
+        }
+        .pos-right .services-img{
+            justify-content: flex-end;
+        }
+        .pos-left .services-img{
+            justify-content: start-end;
+         }
+        .col-lg-6, .col-lg-3 ,.col-lg-9{
+            flex: 0 0 100%;
+            max-width: 100%; 
+            padding: 0px;
+        }
+        .pos-right .services-img{
+            float:right;
+         }
+    }
+
 }
 @include media-breakpoint-down(lg) { // Large devices (desktops, 992px and up)
 }
