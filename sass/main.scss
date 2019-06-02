@@ -21,6 +21,7 @@
 
 body {
     font-family: "GT Eesti Display",Helvetica,Arial,sans-serif;
+    overflow-x:hidden;
 }
 h1{
     font-family: "GT Eesti Display",Helvetica,Arial,sans-serif;
@@ -157,8 +158,66 @@ h1{
 // end services styles
 // -------------------------------------------------------------
 
+// overides media break point 
+@media (max-width: 1200px) and (min-width: 768px){
 
+    .container {
+        max-width: 690px;
+    }
+    .hero{  
+        .col-lg-9{
+            flex: 0 0 100%;
+            max-width: 100%; 
+            padding: 0px;      
+        }    
+        .col-lg-6{
+            flex: 0 0 80%;
+            max-width: 80%; 
+            padding: 0px;
+        }
+        .hero-title { 
+            margin-left: 24px;
+        }
+    }
 
+    .services {
+        .container{
+            padding-bottom: 50px;
+        }
+        .section-title{
+            position: absolute;
+        }
+        .mb-row{
+            margin-bottom: 0px !important;
+        }
+        .pos-left{
+            margin-top:0px;
+            padding-left: 15px;
+            padding-right: 215px;
+        }
+        .pos-right{
+            padding-left: 215px;
+            padding-right: 15px;
+        }
+        .pos-right .services-img{
+            justify-content: flex-end;
+        }
+        .pos-left .services-img{
+            justify-content: start-end;
+         }
+
+         .col-lg-6, .col-lg-3 ,.col-lg-9{
+            flex: 0 0 100%;
+            max-width: 100%; 
+            padding: 0px;
+        }
+
+        .pos-right .services-img{
+            float:right;
+         }
+    }
+
+}
 
 
 // -------------------------------------------------------------
@@ -219,6 +278,16 @@ h1{
         .pos-right .card-footer{
             padding-left: 40px;
         }
+        .pos-left .col-lg-3 , .pos-right .col-lg-3{
+            flex: 0 0 100%;
+            max-width: 100%; 
+            padding: 0px;         
+        }
+        .pos-left .card-wrapper{
+            flex: 0 0 100%;
+            max-width: 100%; 
+            padding: 0px;         
+        }
         .pos-left {
             padding-right: 0 !important;
             padding-left: 0 !important;
@@ -272,7 +341,7 @@ h1{
         .pos-left .services-img{
             justify-content: start-end;
          }
-        .col-lg-6, .col-lg-3 ,.col-lg-9{
+        .pos-right .card-wrapper{
             flex: 0 0 100%;
             max-width: 100%; 
             padding: 0px;
